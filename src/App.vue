@@ -1,20 +1,19 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Welcome to Your Plugin in Vue.js</h1>
+    <regex-code-box>/^[A-Za-z0-9]+(?:[ _-][A-Za-z0-9]+)*$/</regex-code-box>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import RegexCodeBox from './components/RegexCodeBox'
 export default {
-  name: 'app',
   components: {
-    HelloWorld
-  }
+    RegexCodeBox
+  },
 }
 </script>
+
 
 <style>
 #app {
